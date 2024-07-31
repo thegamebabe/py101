@@ -1,7 +1,14 @@
+import pdb
+
+
+pdb.set_trace()  # Another breakpoint
+
+
 def oddities(vals):
     new_list = list()
     for index in list(range(0, len(vals), 2)):
         new_list.append(vals[index])
+        pdb.set_trace()  # Add breakpoint
     return new_list
 
 # Slicing Technique
